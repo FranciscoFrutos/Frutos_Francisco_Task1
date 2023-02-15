@@ -1,89 +1,3 @@
-/*
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-
-h1{
-    font-size:4rem;
-}
-
-header{
-    min-height: 20vh;
-}
-
-.header{
-   position: relative;
-}
-
-.header>img{
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
-    object-position: 50% 25%;
-}
-
-nav{
-    text-align: end;
-    position: absolute;
-    top: -1rem;
-    right: 0.5rem;
-}
-
-nav>a{
-    text-decoration: none;
-    display: inline-block;
-    color: white;
-    background-color: #4472c4;
-    border: 2px solid rgb(0, 0, 187);
-    padding: 4px 12px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.358);
-}
-
-#current{
-    background-color: rgb(107, 177, 1);
-}
-
-img[alt="logo"]{
-    height: 8rem;
-    
-    vertical-align: top;
-    margin-bottom: 2rem;
-    
-}
-
-section>h2{
-    margin-bottom: 2rem;
-    text-align: center;
-    border: 2px solid black;
-    background-color: rgb(250, 248, 216);
-}
-
-.articles{
-    display: inline-block;   
-    margin-left: 2rem;
-    max-width: 75%;
-    background-color: rgb(250, 248, 216);
-    padding: 2rem;
-    box-shadow: 0.5rem 0.5rem rgb(94, 119, 92);
-   
-}
-
-article{
-    margin-bottom: 1rem;
-   
-}
-
-main{
-    min-height: 76vh;
-}
-*/
-
-
 *{
     padding: 0;
     margin: 0;
@@ -115,6 +29,7 @@ nav>ul{
     flex-direction: row;
     list-style: none;
     gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 nav a{
@@ -164,11 +79,12 @@ section{
 
 .section-title{
    display: flex;
-   justify-content: center;
+   align-items: center;
    
    padding: 0.5rem;
    background-color: rgb(96, 159, 151);
    color: white;
+   flex-direction: column;
 }
 
 
@@ -204,3 +120,57 @@ article{
     margin-bottom: 2vw;
     /*box-shadow: 2px 2px rgba(0, 0, 0, 0.358);*/
 }
+
+.ol-num, .ol-alpha, .ul-circle{
+    margin: 1em 0;
+    padding: 0 0 0 40px;
+}
+
+.ol-num {
+    list-style: decimal;  
+}
+.ol-num>li{
+    margin-bottom: 1vw;
+}
+
+.ol-num>li::marker{
+    font-weight: bold;
+}
+
+.ol-alpha{
+    list-style: lower-alpha;
+}
+
+.ul-circle{
+    list-style: circle;
+}
+
+td, tr, th{
+    padding: 1vw 2vw;
+    text-align: center;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vw;
+}
+.table>table{
+    align-items: center;
+    
+}
+
+#more-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+#more-info p{
+    margin-bottom: 1vw;
+}
+
+#contact-info{
+    display: flex;
+    justify-content: space-between;
+}
+
